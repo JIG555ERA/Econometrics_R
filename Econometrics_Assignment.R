@@ -52,6 +52,27 @@ cat("arithmetic mean",am)
 cat("geometric mean",gm)
 cat("harmonic mean",hm)
 
+#Q.4
+x=c(20,15,19,17,21,16,15,22,24,12,17,13,12,18,17,19,16,13,23,10)
+n=length(x);m=mean(x)
+min=min(x);max=max(x);r=max-min;cr=r/(max+min)
+q1=quantile(x,0.25);q3=quantile(x,0.75)
+qd=(q3-q1)/2;cqd=(q3-q1)/(q3+q1)
+md=sum(abs(x-m))/n;cmd=md/m
+v1=var(x)
+sd=(var(x))^1/2
+cv=sd*100/m
+cat("Arithmetic Mean",m)
+cat("Range",r)
+cat("Co-efficient of Range",cr)
+cat("Quantile Deviation",qd)
+cat("Co-efficient of Quantile Deviation",cqd)
+cat("Mean Deviation",md)
+cat("Co-efficient of Mean Deviation",cmd)
+cat("Variance",v1)
+cat("Standard Deviation",sd)
+cat("Co-efficient of Variation",cv)
+
 #Q.5
 x=0:9;f=c(24,42,85,120,110,98,75,56,32,18)
 n=length(x)
